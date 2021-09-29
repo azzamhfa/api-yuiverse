@@ -1,6 +1,6 @@
-var express = require("express");
-var puppeteer = require("puppeteer");
-var app = express();
+const express = require("express");
+const puppeteer = require("puppeteer");
+const app = express();
 
 const port = process.env.PORT || 8080;
 
