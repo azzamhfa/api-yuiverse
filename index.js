@@ -10,7 +10,10 @@ app.get("/", function (req, res) {
 
 app.get("/data", function (req, res) {
   (async () => {
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
     try {
       const page = await browser.newPage();
       await page.goto(
