@@ -2,7 +2,9 @@ var express = require("express");
 var puppeteer = require("puppeteer");
 var app = express();
 
-app.listen(3000 || 5001);
+const port = process.env.PORT || 8080;
+
+app.listen(port);
 // respond with "hello world" when a GET request is made to the homepage
 app.get("/", function (req, res) {
   res.send("hello world");
