@@ -1,0 +1,16 @@
+{
+  "name": "saku101scrape",
+  "version": "1.0.0",
+  "description": "saku101 web scraping",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "azzamhfa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "puppeteer": "^10.4.0"
+  }
+}
