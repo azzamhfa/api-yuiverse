@@ -42,8 +42,11 @@ app.get("/data", function (req, res) {
             ".anwp-pg-post-teaser__excerpt"
           ).innerText;
 
+          // LINK KE SAKU101
+
+          const linkSaku = pon.querySelector(".anwp-link-without-effects").href;
           // listCover = [];
-          return { title: title, cover: url, spoiler: spoiler };
+          return { title: title, cover: url, spoiler: spoiler, linkSaku: linkSaku };
         });
 
         return data;
